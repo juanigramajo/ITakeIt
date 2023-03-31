@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/cf7dc1dea7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="login.html">
+  <link rel="icon" href="./img/icon3.PNG">
+
+  <title>iTake it!</title>
+
+</head>
+
+<body>
+
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="./img/icon3.png" width="100" height="100" class="d-inline-block" alt="" loading="lazy">
+      iTake it!
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse w-100" id="navbarTogglerDemo01">
+      <div class="d-flex align-items-center w-100 justify-content-around ml-3 md-3 p-3">
+      
+      <a href=#nosotros>
+        <i class="fas fa-users"></i>
+        Nosotros
+      </a>
+      <a href=#envios>
+        <i class="far fa-paper-plane"></i>
+        Envíos
+      </a>
+      <a href=#rofli>
+        <i class="fas fa-plane-departure"></i>
+        Rolling Flights
+      </a>
+      <a href=#stock>
+        <i class="fas fa-cash-register"></i>
+        Stock
+      </a>
+      <ul class="d-flex aling-text-center justify-content-between">
+        <!-- Button trigger modal -->
+        <!-- <button type="button"  
+           data-bs-toggle="modal" data-bs-target="#cartModal"></button> -->
+        <button type="button" style="color: rgb(80, 172, 168);" class="fas fa-shopping-cart btn-lg btn-light m-1"
+          onclick="totalPrice()" data-toggle="modal" data-target="#cartModal"></button>
+        <a href="login.html" target="_blank"><button class="btn btn-light m-1">Iniciar Sesión</button></a>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Carrito de compras</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="w-100 table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" id="sup_izq">#</th>
+                <th scope="col" class="col-md-auto">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col" id="sup_der"></th>
+              </tr>
+            </thead>
+            <tbody id="cartModalContent">
+
+            </tbody>
+          </table>
+          <p id="price"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Comprar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/img1.JPEG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/img2.JPEG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/img3.JPEG" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  <section class="d-flex justify-content-between align-items-center" id="section1">
+    <div class="imagen" id="img1">
+      <div id="info">
+        <p id="headline">iPhone</p>
+        <p id="descripcion">
+          <a href="#iPhonee">·iPhone X/XR/XS</a>
+          <br>
+          <a href="#iPhonee">·iPhone XS MAX</a>
+          <br>
+          <a href="#iPhonee">·iPhone 11</a>
+          <br>
+          <a href="#iPhonee">·iPhone 12</a>
+          <br>
+          <a href="#iPhonee">Ver stock</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="imagen" id="img2">
+      <div id="info">
+        <p id="headline">MacBook</p>
+        <p id="descripcion">
+          <a href="#MacBookk">·MacBook Air</a>
+          <br>
+          <a href="#MacBookk">·MacBook Pro</a>
+          <br>
+          <a href="#MacBookk">Ver stock</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="imagen" id="img3">
+      <div id="info">
+        <p id="headline">iPad</p>
+        <p id="descripcion"> ·iPad Mini
+          <br>
+          <a href="#stock">·iPad Air</a>
+          <br>
+          <a href="#stock">·iPad Pro</a>
+          <br>
+          <a href="#stock">Ver stock</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="imagen" id="img4">
+      <div id="info">
+        <p id="headline">Watch</p>
+        <p id="descripcion"> ·Watch Series 5
+          <br>
+          <a href="#stock">·Watch Series 6</a>
+          <br>
+          <a href="#stock">·Watch Series 7</a>
+          <br>
+          <a href="#stock">·Watch Nike</a>
+          <br>
+          <a href="#stock">Ver stock</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="imagen" id="img5">
+      <div id="info">
+        <p id="headline">AirPods</p>
+        <p id="descripcion">·AirPods 1 y 2
+          <br>
+          <a href="#stock">·AirPods Pro.</a>
+          <br>
+          <a href="#stock">Ver stock</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="nosotros">
+    <div id="divnos" class="col-9 col-sm-6 m-auto">
+    <img id="imgnos" src="./img/icon3.PNG" alt="">
+    <div class="d-flex flex-wrap">
+        <h1 id="textnos">Nosotros</h1>
+          <p id="textnos">Somos una empresa dedicada a transportar productos de la marca Apple directamente desde Estados Unidos, tenemos mas de 8 años trabajando, con clientes en mas de 5 provincias de Argentina.
+          <br> Nuestra trayectoria y experiencia trabajando, convence a nuestros clientes a seguir confiando en nosotros. Contamos con locales propios en Buenos Aires, Córdoba, Mendoza y Tucumán. Ademas, tenemos convenios con mas de 20 marcas y locales distribuídos por Argentina. 
+          </p>
+    </div>
+    </div>
+  </section>
+
+
+  <section id="rofli">
+    <div id="divnos" class="col-9 col-sm-6 m-auto">
+      <div class="d-flex flex-wrap">
+          <h1 id="textnos">Convenio con Rolling Flights</h1>
+            <p id="textnos">Como empresa buscamos dar la mejor experiencia a nuestros clientes, por eso, contamos con el trabajo de la compaía aérea Rolling Flights.
+            <br> Rolling Flights, con mas de 10 años volando por los aires, llegó a nosotros para implementar nuestros envíos, nos garantiza día a día la seguridad de nuestros paquetes,y nos brinda a nosotros la misma confianza que nosotros brindamos a nuestros clientes, y por eso nos eligen.
+            </p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <img id="imgnos" src="./img/icon3.PNG" alt="">
+        <img id="imgnos2" src="./img/iconrolling.PNG" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="envios">
+    <div id="Precios" class="card mx-auto mb-5 cardEnvioss shadow">
+      <form id="formulario">
+          <h2>Calcule su costo estimado de envío</h2>
+  
+          <!--Origen y destino-->
+          <div class="form-row justify-content-around">
+              <div class="form-group w-50 px-1">
+                  <label for="inputState">Producto</label>
+                  <select id="inputState" class="form-control px-1">
+                      <option selected>iPhone</option>
+                      <option>MacBook</option>
+                      <option>iPad</option>
+                      <option>Watch</option>
+                      <option>AirPods</option>
+                  </select>
+              </div>
+              <div class="form-group w-50 px-1">
+                  <label for="inputState">Provincia</label>
+                  <select id="inputState" class="form-control px-1">
+                      <option selected>Buenos Aires</option>
+                      <option>Córdoba</option>
+                      <option>Mendoza</option>
+                      <option>Santa Fé</option>
+                      <option>Tierra del Fuego</option>
+                      <option>Tucumán</option>
+                  </select>
+              </div>
+          </div>
+          <div class="form-row justify-content-around">
+              <div class="form-inline w-33 px-1">
+                  <label for="inputState" class="px-1">Cantidad de productos</label>
+                  <select id="inputState" class="form-control px-1">
+                      <option selected>1</option>
+                      <option>2</option>
+                  </select>
+              </div>
+              <button type="submit" class="btn btn-outline-dark w-33 px-5">Buscar</button>
+          </div>
+      </form>
+    </div>
+  </section>
+
+
+
+
+  <section id="stock" class="container">
+    <div class="container">
+      <h5>iPhone</h5>
+      <div class="card-deck d-flex justify-content-center flex-wrap" id="iPhone">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="container">
+      <h5 id="MacBookk">MacBook</h5>
+      <div class="card-deck d-flex justify-content-center flex-wrap" id="MacBook">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="container">
+      <h5>iPad</h5>
+      <div class="card-deck d-flex justify-content-center flex-wrap" id="iPad">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="container">
+      <h5>Watch</h5>
+      <div class="card-deck d-flex justify-content-center flex-wrap" id="Watch">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="container">
+      <h5>AirPods</h5>
+      <div class="card-deck d-flex justify-content-center flex-wrap" id="AirPods">
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="container">
+      <h5>Otros</h5>
+      <div class="card-deck d-flex justify-content-center flex-wrap" id="Otros">
+
+      </div>
+
+      <button class="btn btn-info m-1" onclick="totalPrice()" data-toggle="modal" data-target="#cartModal">Ver carrito</button>
+    </div>
+  </section>
+
+
+  <footer class="container-fluid footer">
+    <div class="row p-4 align-items-center">
+      <div class="col-4">
+        <a target="_blank" href="https://www.facebook.com/RollingCodeSchool">
+          <i class="fab fa-facebook-f social-icon"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/rollingcodeok">
+          <i class="fab fa-twitter social-icon"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/rollingcodeschool/">
+          <i class="fab fa-instagram social-icon"></i>
+        </a>
+      </div>
+      <div class="widget-about w-auto">
+        <img src="img/icon3.png"></img>
+      </div>
+      <!-- Footer dirección -->
+      <div class="container-fluid col-3 text-center mb-0">
+        <address>
+          &#169 iTake It! All Rights Reserved.
+          <br>
+          S.M de Tucumán, Tucumán, Argentina.
+          <br>
+          +54 0810 999 1443 / itakeit@ecommerce.com
+        </address>
+      </div>
+      <!-- Footer column -->
+      <div class="col-4">
+        <ul class="nav flex-column align-content-end text-center">
+          <li class="nav-link pb-1 pt-0">
+            <a href="#">Inicio</a>
+          </li>
+          <li class="nav-link pb-1 pt-0">
+            <a target="_blank"
+              href="https://www.google.com.ar/maps/place/RollingCode+School/@-26.8367009,-65.2093905,17z/data=!3m1!4b1!4m5!3m4!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018">Ubicación</a>
+          </li>
+          <li class="nav-link pb-1 pt-0">
+            <a target="_blank" href="https://outlook.live.com/">Contacto</a>
+          </li>
+          <li class="nav-link pb-1 pt-0">
+            <a href="#">Términos y condiciones</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+
+</body>
+
+</html>

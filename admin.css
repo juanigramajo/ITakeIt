@@ -1,0 +1,35 @@
+.jumbotron {
+    background-image: url(./img/fondoadmin.JPEG);
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+#fondo{
+    background-color: rgb(247, 255, 255);
+}
+
+
+
+@media (min-width: 786px) {
+    .hiddenButtons {
+        display: none;
+    }
+}
+
+@media (max-width: 785px) {
+     .tableButtons {
+        display: none;
+    }
+    .searchButton {
+        font-size: 75%;
+    }
+    h1 {
+        font-size: 300% !important;
+    }
+    
+}
+.headerP {
+    font-size: 150%;
+}

@@ -1,0 +1,249 @@
+html{
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body {
+    position: absolute;
+}
+#navbar {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: teal;
+}
+
+/* table */
+#sup_izq {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#sup_der {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#section1 {
+    height: 200px;
+    background-color: white;
+    background-size: cover;
+}
+
+#nosotros {
+    display: flex;
+    align-items: center;
+    height: 790px;
+    background-image: url(./img/fondonos.JPEG);
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: justify;
+}
+
+#divnos{
+    display: flex;
+    align-items: center;
+}
+
+#imgnos {
+    width: 300px;
+    height: 300px;
+}
+
+#imgnos2 {
+    width: 200px;
+    height: 200px;
+}
+
+#textnos{
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.cardEnvioss{
+    max-width: auto !important;
+}
+
+
+/*Formulario*/
+#formulario{
+    width: max-content;
+    height: max-content;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+
+
+
+#envios {
+    display: flex;
+    align-items: center;
+    height: 790px;
+    background-image: url(./img/fondoenvios.JPEG);
+    background-size: cover;
+}
+
+#rofli {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    height: 790px;
+    background-image: url(./img/rollingflights.JPEG);
+    background-size: cover;
+}
+
+ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#stock {
+    height: auto;
+    background-color: white;
+    background-size: cover;
+}
+
+
+
+/*hover abajo del carru*/
+.imagen {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    background-size: contain;/*sólo para ejemplo*/
+    margin: 30px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img1 {
+    background-image: url(./img/iph.PNG);
+}
+
+#img2 {
+    background-image: url(./img/mac.PNG);
+}
+
+#img3 {
+    background-image: url(./img/ipad.PNG);
+}
+
+#img4 {
+    background-image: url(./img/wat.PNG);
+}
+
+#img5 {
+    background-image: url(./img/airs.PNG);
+}
+
+
+div#info {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    color: white;
+    text-align: center;
+    background-color: rgba(31, 31, 31, 0.685);
+    opacity:0;
+    transition: opacity 0.3s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+  
+.imagen:hover div#info {
+    opacity:1;
+}
+  
+p#headline {
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: -75px;
+    margin-top: 15px;
+    transition: margin-left 0.3s;
+    margin: auto;
+}
+  
+.imagen:hover p#headline {
+    margin-left: 0;
+    text-align: center;
+}
+  
+p#descripcion {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 200px;
+    transition: margin-top 0.4s;
+}
+  
+.imagen:hover p#descripcion {
+    margin-top: 40px;
+}
+
+
+
+/* Footer */
+.footer {
+    color: white;
+    font-size: 15px;
+    background-color: #000000;
+    margin-top: auto;
+    position: relative;
+}
+.widget-about img {
+    width: 60px;
+}
+address {
+    font-size: 12px !important;
+}
+footer .social-icon {
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    margin: 15px;
+}
+footer i:hover {
+    color: rgb(255, 255, 255);
+}
+footer a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.social .social-icon {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+}
+.nav a {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+@media (min-width:360px) {
+    .row {
+        justify-content: center;
+        max-width: 100%;
+    }
+}
+.cardStock {
+    word-break: break-word !important;
+    min-width: 18rem !important;
+    max-width: 19.1rem !important;
+    margin: 10px !important;
+}
+
